@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Meu Site</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <style> 
+    .texto {
+    width: 96%;
+    height: 90px ;
+    margin: 20px auto;
+    padding: 30px;
+    font-size: 20px;
+    font-family: Alfa Slab One; 
+    background-color: #003366; 
+    color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    border: 1px solid black;
+    text-shadow: 1px 1px 0px black, 
+                     -1px -1px 0px black, 
+                     1px -1px 0px black, 
+                     -1px 1px 0px black; 
+        text-align: right; 
+        }
+        .texto:hover {
+        text-decoration: underline;
+        transform: scale(1.1);
+        }
+        .texto:active {
+        text-decoration: underline;
+        } 
+    .texto2 {
+            width: 96%;
+            height: 90px;
+            margin: 20px auto;
+            padding: 30px;
+            font-size: 20px;
+            font-family: Alfa Slab One;
+            background-color: yellow;  
+            color: white; 
+            border: 1px solid black;
+            border-radius: 10px;
+            text-shadow: 1px 1px 0px black, 
+                         -1px -1px 0px black, 
+                         1px -1px 0px black, 
+                         -1px 1px 0px black; 
+            text-align: right;
+    }
+    .texto2:hover {
+        text-decoration: underline;
+        transform: scale(1.1);
+        }
+        .texto2:active {
+        text-decoration: underline;
+        } 
+    .texto3 {
+            width: 96%;
+            height: 90px;
+            margin: 20px auto;
+            padding: 30px;
+            font-size: 20px;
+            font-family: Alfa Slab One;
+            background-color: red; 
+            color: white; 
+            border: 1px solid black;
+            border-radius: 10px;
+            text-shadow: 1px 1px 0px black, 
+                         -1px -1px 0px black, 
+                         1px -1px 0px black, 
+                         -1px 1px 0px  black;
+            text-align: right;
+    }
+    .texto3:hover {
+        text-decoration: underline;
+        transform: scale(1.1);
+        }
+        .texto3:active {
+        text-decoration: underline;
+        } 
+    .texto4 {
+            width: 96%;
+            height: 90px;
+            margin: 20px auto;
+            padding: 30px;
+            font-size: 20px;
+            font-family: Alfa Slab One;
+            background-color: #8B4513;  
+            color: white; 
+            border: 1px solid black;
+            border-radius: 10px;
+            text-shadow: 1px 1px 0px black, 
+                         -1px -1px 0px black, 
+                         1px -1px 0px black, 
+                         -1px 1px 0px black; 
+            text-align: right;    
+    }
+    .texto4:hover {
+        text-decoration: underline;
+        transform: scale(1.1);
+        }
+        .texto4:active {
+        text-decoration: underline;
+        } 
+    .texto5 {
+            width: 97%;
+            height: 90px;
+            margin: 20px auto;
+            padding: 30px;
+            font-size: 20px;
+            font-family: Alfa Slab One;
+            background-color: green;  
+            color: white;
+            border: 1px solid black;
+            border-radius: 10px;
+            text-shadow: 1px 1px 0px black, 
+                         -1px -1px 0px black, 
+                         1px -1px 0px black, 
+                         -1px 1px 0px black; 
+            text-align: right;
+        }
+        .texto5:hover {
+        text-decoration: underline;
+        transform: scale(1.1);
+        }
+        .texto5:active {
+        text-decoration: underline;
+        } 
+    </style>
+</head>
+<body>
+    <header class="recycling-header">
+        <img src="imagem.png" alt="Clique para reproduzir" class="botao-imagem" onclick="document.getElementById('musicmario').play()" />
+    </header>
+    <div  class="texto" onmouseover="document.getElementById('mousemario').play();"
+                        onclick="document.getElementById('Clickmario').play();">
+        PAPEL  
+    </div>
+    <div class="texto2" onmouseover="document.getElementById('mousemario2').play();"
+                        onclick="document.getElementById('Clickmario2').play();">
+        METAL
+    </div>
+    <div class="texto3" onmouseover="document.getElementById('mousemario3').play();"
+                        onclick="document.getElementById('Clickmario3').play();">
+        PLÁSTICO
+    </div>
+    <div class="texto4" onmouseover="document.getElementById('mousemario4').play();"
+                        onclick="document.getElementById('Clickmario4').play();">
+        ORGÂNICO
+    </div>
+    <div class="texto5" onmouseover="document.getElementById('mousemario5').play();"
+                        onclick="document.getElementById('Clickmario5').play();">
+        VIDRO
+    </div>
+        <audio id="musicmario">
+            <source src="Mário.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="mousemario">
+            <source src="mouse.mp3" type="audio/mpeg">
+        </audio> 
+        <audio id="mousemario2">
+            <source src="mouse.mp3" type="audio/mpeg">
+        </audio> 
+        <audio id="mousemario3">
+            <source src="mouse.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="mousemario4">
+            <source src="mouse.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="mousemario5">
+            <source src="mouse.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="Clickmario">
+            <source src="Click.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="Clickmario2">
+            <source src="Click.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="Clickmario3">
+            <source src="Click.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="Clickmario4">
+            <source src="Click.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="Clickmario5">
+            <source src="Click.mp3" type="audio/mpeg">
+        </audio>
+</body>
+</html>
